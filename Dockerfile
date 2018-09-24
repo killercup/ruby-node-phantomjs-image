@@ -5,10 +5,10 @@ FROM ruby:2.5.1-slim
 # (https://github.com/bundler/bundler/pull/4992)
 # This was fixed in bundler version >= 1.13.2, so make sure a bundler version
 # >= 1.13.2 and a matching rubygems version is installed.
-ENV RUBYGEMS_VERSION 2.6.7
+ENV RUBYGEMS_VERSION 2.7.6
 RUN gem update --system "$RUBYGEMS_VERSION"
 # use bundler version matching bundler version in Gemfile.lock
-ENV BUNDLER_VERSION 1.16.3
+ENV BUNDLER_VERSION 1.16.5
 RUN gem install bundler --version "$BUNDLER_VERSION"
 # continue as before
 RUN apt-get update -qq \
