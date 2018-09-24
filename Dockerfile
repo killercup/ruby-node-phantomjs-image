@@ -8,7 +8,7 @@ FROM ruby:2.3.1-slim
 ENV RUBYGEMS_VERSION 2.6.7
 RUN gem update --system "$RUBYGEMS_VERSION"
 # use bundler version matching bundler version in Gemfile.lock
-ENV BUNDLER_VERSION 1.13.7
+ENV BUNDLER_VERSION 1.16.3
 RUN gem install bundler --version "$BUNDLER_VERSION"
 # continue as before
 RUN apt-get update -qq \
