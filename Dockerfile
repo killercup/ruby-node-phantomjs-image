@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-slim
+FROM ruby:2.3.1-slim
 # In bundler version 1.12 some changes were made to accomodate changes to path
 # methods in newer rubygems versions, which broke nested 'bundle exec' calls.
 # See bundler issue #4992 for a more detailed explanation.
